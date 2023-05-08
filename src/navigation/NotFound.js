@@ -1,12 +1,9 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
-//import { LinkRoute } from "components/LinkRoute";
-//import { ROOT } from "./CONSTANTS";
+import { Typography } from '@mui/material';
 
 export const NotFound = () => {
   return (
     <>
-      {/* <LinkRoute to={ROOT}>Home</LinkRoute> */}
       <Typography variant="h2">404: page not found!</Typography>
     </>
   );

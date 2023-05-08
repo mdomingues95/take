@@ -1,5 +1,5 @@
-
-import { createTheme } from "@material-ui/core";
+import { createTheme } from '@mui/material/styles';
+import { PRIMARY_COLOR, SECONDARY_COLOR } from 'config/CONSTANTS';
 
 const global = {
   textRight: {
@@ -12,31 +12,26 @@ export const dark = () => (createTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: "#040f3d",
+      main: PRIMARY_COLOR,
     },
     secondary: {
-      main: "#757575",
+      main: SECONDARY_COLOR,
     },
   },
   typography: {
     button: {
-      // textTransform: "none",   //Using this will stop tranforming all button texts to UPPERCASE
     },
-  }//,
-  //common styles.
-//   global
+  }
 }))
 
-export const light = ()=> (createTheme({
+export const light = () => (createTheme({
   palette: {
     type: 'light',
     primary: {
-      main: "#4bffa5",
+      main: PRIMARY_COLOR,
     },
     secondary: {
-      main: "#040f3d",
+      main: SECONDARY_COLOR,
     },
-  }//,
-  //common styles.
-//   global
+  }
 }))
