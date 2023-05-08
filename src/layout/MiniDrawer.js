@@ -27,6 +27,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import HomeIcon from '@mui/icons-material/Home';
 import { PRIMARY_COLOR } from 'config/CONSTANTS';
 import { useAuth } from 'navigation/Auth/ProvideAuth';
+import { ROOT } from 'navigation/CONSTANTS';
 
 const drawerWidth = 240;
 
@@ -97,7 +98,8 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 function isSelected(route) {
     if (route == "") return false;
-    if (window.location.pathname.indexOf(route) >= 0) {
+    if (route == ROOT && route == window.location.pathname) return true;
+    if (window.location.pathname.indexOf(route) >= 0 && route != ROOT) {
         return true;
     }
     return false;

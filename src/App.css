@@ -1,7 +1,3 @@
-html {
-  --color-porimary: hsl(0deg 80% 50%);
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -36,6 +32,10 @@ code {
 
 .jutify_center{
   justify-content: center;
+}
+
+.jutify_end{
+  justify-content: flex-end;
 }
 
 .full_height {

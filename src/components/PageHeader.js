@@ -1,8 +1,6 @@
 import {
     Box,
-    Paper,
     Typography,
-    Divider,
     IconButton
 } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';

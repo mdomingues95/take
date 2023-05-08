@@ -1,4 +1,4 @@
-import { VEHICLES } from 'navigation/CONSTANTS';
+import { ROOT, VEHICLES } from 'navigation/CONSTANTS';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import SellIcon from '@mui/icons-material/Sell';
@@ -20,7 +20,7 @@ export function ProvideAuth({ children }) {
     });
 
     const [menus, setMenus] = useState([
-        { label: "Resumo", icon: <DashboardIcon/>, link: "" },
+        { label: "Resumo", icon: <DashboardIcon/>, link: ROOT },
         { label: "Oportunidades", icon: <SellIcon/>, link: "" },
         { label: "Agenda", icon: <CalendarMonthIcon/>, link: "" },
         { label: "Veículos", icon: <DirectionsCarIcon/>, link: VEHICLES },

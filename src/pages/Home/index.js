@@ -1,9 +1,8 @@
-
 function Home() {
 
   return (
     <div>
-      oi
+      Por favor, acessar menu "Veículos"
     </div>
   );
 }
